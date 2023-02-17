@@ -2,11 +2,6 @@ import random as rd
 import time
 
 
-# def fib_func(nums):
-#     if nums <= 1:
-#         return nums
-#     return fib_func(nums - 1) + fib_func(nums - 2)
-
 def fib_func_for(nums):
     f1 = f2 = 1
     for _ in range(2, nums):

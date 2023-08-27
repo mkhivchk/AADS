@@ -37,11 +37,6 @@ with open('output.txt', 'w') as out, open('input.txt', 'r') as data:
     dat = [int(it) for it in lines[1].strip('\n ').split(' ')]
     find = [int(ip) for ip in lines[3].strip('\n ').split(' ')]
 
-    print(dat)
-    print(find[345])
-
-    print(find_pos(dat, find[345]))
-
     for fi in find:
         out.write(str(find_pos(dat, fi)) + ' ')
 

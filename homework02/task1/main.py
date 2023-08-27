@@ -37,12 +37,12 @@ def merge_sort(array: list):
             k += 1
 
 
-with open('input.txt', 'w') as input:
+with open('input.txt', 'w') as inp:
     n = random.randint(1, 200000)
-    input.write(str(n) + '\n')
+    inp.write(str(n) + '\n')
     massive = [random.randint(-1000000000, 1000000000) for _ in range(n)]
     for el in massive:
-        input.write(str(el) + ' ')
+        inp.write(str(el) + ' ')
 
 with open('input.txt', 'r') as ini, open('output.txt', 'w') as out:
     data: list = ini.readlines()[1].split(' ')
